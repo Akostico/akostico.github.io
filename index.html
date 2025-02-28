@@ -3,83 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea</title>
+    <title>Tarea - MySpace Vibes</title>
     <style>
+        /* Base Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #181818;
-            color: #e5e5e5;
+            background-color: #111;
+            color: #fff;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #333;
-            color: #ff66cc;
+            background: #ff3366;
+            color: #fff;
             text-align: center;
-            padding: 25px 0;
-            font-size: 2.5em;
-            border-bottom: 3px solid #ff66cc;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            padding: 30px 0;
+            font-size: 3em;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 5px solid #ff3366;
         }
+
         .blog-posts {
             width: 85%;
             margin: 30px auto;
             padding: 20px;
-            background-color: #222;
+            background: #222;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            background-image: url('https://cdn.pixabay.com/photo/2017/07/04/13/00/blue-2462393_960_720.jpg');
+            background-size: cover;
         }
+
         .post {
-            background-color: #2a2a2a;
-            padding: 25px;
+            background-color: rgba(255, 51, 102, 0.8); /* Fondo semi-transparente */
+            padding: 20px;
             margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-left: 6px solid #ff66cc;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease-in-out;
         }
+
         .post:hover {
-            background-color: #333;
+            background-color: rgba(255, 51, 102, 1); /* Cambio de color en hover */
+            transform: scale(1.05);
         }
+
         .post h2 {
-            color: #ff66cc;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.8em;
-            text-decoration: underline;
+            color: #ffccff;
+            font-family: 'Lucida Handwriting', cursive;
+            font-size: 2em;
+            text-decoration: underline wavy #ff3366;
             margin-bottom: 10px;
         }
+
         .post p {
             font-size: 1.2em;
-            line-height: 1.7em;
-            color: #d1d1d1;
+            line-height: 1.8em;
+            color: #f2f2f2;
         }
+
         .post a {
             color: #ff66cc;
             text-decoration: none;
             font-weight: bold;
-            padding: 10px;
+            padding: 10px 20px;
             background-color: #444;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
+
         .post a:hover {
-            background-color: #ff66cc;
+            background-color: #ff3366;
             color: #222;
         }
+
         footer {
             background-color: #333;
-            color: #ff66cc;
+            color: #ff3366;
             text-align: center;
             padding: 15px;
             position: relative;
             width: 100%;
             bottom: 0;
-            font-size: 0.9em;
+            font-size: 1em;
+            text-transform: uppercase;
+            border-top: 2px solid #ff3366;
         }
-        .stars {
-            background: url(https://i.pinimg.com/736x/20/39/9f/20399fb1a6e530a31ed153a7f25bf2d3.jpg') repeat;
-            padding: 50px 0;
-        }
+
         .button {
             background-color: #ff66cc;
             color: #fff;
@@ -88,23 +104,41 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            margin-top: 20px;
+            display: inline-block;
         }
+
         .button:hover {
             background-color: #ff3399;
+        }
+
+        /* Agregar una animación de parpadeo al título */
+        header {
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% { color: #ff3366; }
+            50% { color: #ffccff; }
+            100% { color: #ff3366; }
+        }
+
+        /* Efectos de cursor */
+        .button, .post a {
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
     <header>
-        Tarea
+        Tarea - MySpace Vibes
     </header>
 
     <div class="blog-posts">
         <div class="post">
-            <h2>Primer Post: Mis pensamientos</h2>
-            <p> Crear una página web no deberia ser tan complicado.</p>
-            <a href="#" class="button">Leer más</a>
+         <h2>Primer Post: Mis pensamientos</h2>
+            <p> Crear una página web no deberia ser tan complicado.</p>   
         </div>
 
         <div class="post">
@@ -114,11 +148,9 @@
         </div>
     </div>
 
-    <div class="stars">
-        <footer>
-            <p>Creado para la tarea - &copy; 2025</p>
-        </footer>
-    </div>
+    <footer>
+        <p>Creado para la tarea - &copy; 2025</p>
+    </footer>
 
 </body>
 </html>
